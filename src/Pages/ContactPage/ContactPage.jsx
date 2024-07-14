@@ -67,7 +67,6 @@ function ContactPage() {
 
     return (
         <div className="App">
-            <Header />
             <form onSubmit={handleSubmit}>
                 <div className='form-group'>
                     <label>First Name</label>

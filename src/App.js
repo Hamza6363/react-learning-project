@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './Layout/Header/Header';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import ServicePage from './Pages/ServicePage/ServicePage';
 import ServiceDetailPage from './Pages/ServiceDetailPage/ServiceDetailPage';
 
 function App() {
-    return (
+    return (<>
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route path='/' element={<div>Home page</div>} />
                 <Route path='/contact' element={<ContactPage />} />
@@ -15,8 +17,10 @@ function App() {
                 <Route path="/service" element={<ServicePage />}>
                     <Route path=":serviceId" element={<ServiceDetailPage />} />
                 </Route>
+                <Route path='/useEffect' element={<div>UseEffect Page</div>} />
             </Routes>
         </BrowserRouter>
+    </>
     );
 }
 
