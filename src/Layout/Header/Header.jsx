@@ -17,6 +17,9 @@ function Header() {
                 <li>
                     <NavLink to={'/contact'}>Contact</NavLink>
                 </li>
+                <li>
+                    <NavLink to={'/useEffect'}>useEffect</NavLink>
+                </li>
             </nav>
         </header>
         </>

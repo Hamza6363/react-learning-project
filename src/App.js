@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Layout/Header/Header';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import ServicePage from './Pages/ServicePage/ServicePage';
+import UseEffectPage from './Pages/UseEffectPage/UseEffectPage';
 import ServiceDetailPage from './Pages/ServiceDetailPage/ServiceDetailPage';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
                 <Route path="/service" element={<ServicePage />}>
                     <Route path=":serviceId" element={<ServiceDetailPage />} />
                 </Route>
-                <Route path='/useEffect' element={<div>UseEffect Page</div>} />
+                <Route path='/useEffect' element={<UseEffectPage />} />
             </Routes>
         </BrowserRouter>
     </>
